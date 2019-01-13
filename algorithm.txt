@@ -1,0 +1,15 @@
+opencv_createsamples -info /home/darius/haarcascade/trainpictures/good.dat -vec /home/darius/haarcascade/samples.vec -w 30 -h 20
+
+opencv_traincascade -data /home/darius/haarcascade -vec /home/darius/haarcascade/samples.vec -bg /home/darius/haarcascade/bg.txt -numstages 21 -minhitrate 0.99 -maxFalseAlarmRate 0.5 -numPos 610 -numNeg 726 -w 30 -h 20 -mode ALL -precalcValBufSize 256 -precalcIdxBufSize 256
+
+opencv_traincascade -data /home/darius/haarcascade -vec /home/darius/haarcascade/samples.vec -bg /home/darius/haarcascade/bg.txt -numstages 21 -minhitrate 0.99 -maxFalseAlarmRate 0.5 -numPos 550 -numNeg 726 -w 30 -h 20 -mode ALL -precalcValBufSize 256 -precalcIdxBufSize 256
+
+opencv_createsamples -info /home/darius/haarcascade/trainpictures/good.dat -vec /home/darius/haarcascade/samples.vec -w 40 -h 30
+
+opencv_traincascade -data /home/darius/haarcascade -vec /home/darius/haarcascade/samples.vec -bg /home/darius/haarcascade1/bg.txt -numstages 25 -minhitrate 0.99 -maxFalseAlarmRate 0.5 -numPos 567 -numNeg 726 -w 40 -h 30 -mode ALL -precalcValBufSize 256 -precalcIdxBufSize 256
+
+opencv_traincascade -data /home/darius/haarcascade -vec /home/darius/haarcascade/samples.vec -bg /home/darius/haarcascade/bg.txt -numstages 25 -minhitrate 0.995 -maxFalseAlarmRate 0.1 -numPos 567 -numNeg 726 -w 30 -h 20 -nonsym -mode ALL -precalcValBufSize 1024 -precalcIdxBufSize 1024
+
+opencv_traincascade -data /home/darius/haarcascade -vec /home/darius/haarcascade/samples.vec -bg /home/darius/haarcascade/bg.txt -numstages 25 -nsplits 2 -minhitrate 0.999 -maxFalseAlarmRate 0.5 -numPos 600 -numNeg 726 -w 30 -h 20 -nonsym -mem 1024 -mode ALL
+
+opencv_traincascade -data /home/darius/haarcascade -vec /home/darius/haarcascade/samples.vec -bg /home/darius/haarcascade/bg.txt -numstages 25 -minhitrate 0.999 -maxFalseAlarmRate 0.3 -numPos 590 -numNeg 726 -w 30 -h 20 -featureType LBP -mem 1024 -mode ALL
